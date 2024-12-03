@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat em Tempo Real</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+    }
+    h1 {
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat em Tempo Real</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+    #messages {
+      list-style-type: none;
+      padding: 0;
+      margin: 20px;
+      max-height: 400px;
+      overflow-y: auto;
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    #messages li {
+      margin: 5px 0;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 16px;
+    }
+    #nickname {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Chat em Tempo Real</h1>
+
+  <!-- Campo para o nickname -->
+  <input id="nickname" type="text" placeholder="Digite seu nickname" autofocus>
+
+  <!-- Lista de mensagens -->
+  <ul id="messages"></ul>
+
+  <!-- Formulário de envio de mensagem -->
+  <form id="chatForm" action="#">
+    <input id="m" type="text" autocomplete="off" placeholder="Digite uma mensagem..." required>
+    <button type="submit" id="sendButton">Enviar</button>
+  </form>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
